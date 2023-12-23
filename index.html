@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="main">
+      <div class="mainHead">
+        <div>
+          <img class="logo" src="./images/Logo.svg" alt="logo" />
+          <h2 class="head">For Individuals</h2>
+          <p class="mainP">
+            Start benefiting from the wellness experience. For companies looking
+            on increasing productivity, and improving organization wellness.
+          </p>
+        </div>
+      </div>
+      <div class="formSection">
+        <form class="form">
+          <div class="Dform">
+            <div style="width: 100%">
+              <label for="firstName">First name</label> <br />
+              <input type="text" name="firstName" id="firstName" />
+            </div>
+            <div style="width: 100%">
+              <label for="lastName">Last name</label> <br />
+              <input type="text" name="LastName" id="LastName" />
+            </div>
+          </div>
+          <div class="Aform">
+            <div style="margin-top: 2px; width: 100%">
+              <label for="gender">Gender</label>
+              <div class="input-container">
+                <select name="gender" id="gender">
+                  <option value="" disabled selected>Select Gender</option>
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                </select>
+                <img src="./images/u_angle-down.svg" alt="" class="icon" />
+              </div>
+            </div>
+            <div style="width: 100%">
+              <label for="dob">Date of Birth</label> <br />
+              <input type="date" name="dob" id="dob" />
+            </div>
+          </div>
+          <div class="Dform" style="margin-top: 10px">
+            <div style="width: 100%">
+              <label for="weight">Weight (KG)</label> <br />
+              <input
+                placeholder="Enter Weight"
+                type="number"
+                name="weight"
+                id="weight"
+              />
+            </div>
+            <div style="width: 100%">
+              <label for="height">Height (CM)</label> <br />
+              <input
+                placeholder="Enter Height"
+                type="number"
+                name="height"
+                id="height"
+              />
+            </div>
+          </div>
+          <div style="margin-top: 10px">
+            <label for="gender">Activity Level</label> <br />
+            <div class="input-container">
+              <select name="gender" id="gender">
+                <option value="" disabled selected>Select here</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+              </select>
+              <img class="icon" src="./images//u_angle-down.svg" alt="" />
+            </div>
+          </div>
+          <div style="margin-top: 10px">
+            <label for="password">Password</label> <br />
+
+            <input type="password" name="password" id="password" />
+          </div>
+          <button class="btn">Register</button>
+        </form>
+        <p class="footer">
+          By clicking Register, you agree to our <span>Terms of Use </span>and
+          our <span>Privacy Policy</span>
+        </p>
+      </div>
+    </section>
+  </body>
+</html>

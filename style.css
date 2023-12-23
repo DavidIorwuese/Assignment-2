@@ -1,0 +1,186 @@
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100vh;
+    font-family: Brown;
+    background:rgba(46, 196, 182, 0.04);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 140px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;
+}
+
+.mainHead {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 50px;
+    width: 77.333px;
+    height: 80px;
+}
+
+.head {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.mainP {
+    color: #737373;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.Dform {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 24px;
+}
+
+.Aform {
+    margin-top: 10px; display: flex; width: 100%; gap: 24px
+}
+
+input[type="date"] {
+    padding-right: 20px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+  select {
+    -moz-appearance: none;
+    -webkit-appearance: none; 
+    appearance: none;
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px 16px;
+  }
+
+  .input-container {
+    position: relative;
+  }
+
+  .icon {
+    position: absolute;
+    top: 50%;
+    right: 10px; 
+    transform: translateY(-30%);
+    width: 20px;
+    height: auto;
+  }
+
+
+.formSection {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.10);
+    padding: 40px;
+}
+
+label {
+    font-family: Sofia Pro;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+input {
+    margin-top: 10px;
+    width: 100%;
+    padding: 14px 16px;
+}
+
+.btn {
+    width: 100%;
+    background-color: #2EC4B6;
+    color: white;
+    border: 0;
+    margin-top: 30px;
+    margin-bottom: 16px;
+    padding: 16px 0;
+    cursor: pointer;
+}
+
+.footer {
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+span {
+    color:  #2EC4B6;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        height: max-content;
+        padding: 0 24px;
+    }
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+    }
+
+    .logo {
+        /* width: 38.667px;
+        height: 40px; */
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+
+    .mainHead {
+        font-size: 30px;
+    }
+
+    .Dform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Aform {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        height: max-content;
+        padding: 0 50px;
+    }
+    .main {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap:    20px;
+    }
+    .formSection {
+        padding: 20px;
+    }
+    .mainP {
+        width: 327px;
+    }
+}
